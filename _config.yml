@@ -17,7 +17,7 @@ slogan: 'Biblical insight for saints of Jesus Christ'
 description: 'Letters to the Saints exists to bring biblical teaching and resources to Christians.'
 
 # The credits show up in the includes/_footer.html – It would be nice of you to leave a link to Phlow or Feeling Responsive as a thank you :)
-credits: '<p>&copy; 2019 by 'Letters to the Saints'</p>'
+credits: '<p>&copy; 2019 by Letters to the Saints</p>'
 
 # Main author of the website
 # See > authors.yml
