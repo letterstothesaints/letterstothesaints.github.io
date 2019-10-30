@@ -1,10 +1,8 @@
 source "https://rubygems.org"
 
-# This will help ensure the proper Jekyll version is running.
-gem "jekyll", "~> 3.8.5"
-
-group :jekyll_plugins do
-  gem 'jekyll-paginate'
-  gem 'jekyll-sitemap'
-end
-
+gem "jekyll", "~> 3.2.1"
+gem "jekyll-sitemap"
+gem "jekyll-gist"
+gem 'jekyll-mentions'
+gem 'jekyll-feed'
+gem 'jekyll-paginate'
