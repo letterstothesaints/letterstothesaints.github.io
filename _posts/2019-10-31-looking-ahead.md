@@ -1,28 +1,27 @@
 ---
 layout: post
-title:  "Welcome to Massively: The Jekyll Theme!"
-date:   2017-10-31
-excerpt: "Huge thanks to HTML5 UP for making this awesome template! Let's see what it can do"
-image: "/images/pic02.jpg"
+title:  "Looking ahead..."
+date:   2019-10-31
+excerpt: "What's coming next from 'Letters To The Saints'?"
+image: "/images/pic02.jpeg"
 ---
 
-## How to Use This Theme
-Just go ahead and read up on [how to install Jekyll](https://jekyllrb.com/). It's not too hard I promise!
+## Why another blog?
+<p>Okay we get it, in conjunction with all we said on the landing page, the world (including Christianity) is filled with blogs. Everyone has a voice and many people want it to be heard so they take to making a podcast or writing a blog. There is nothing we can say here that faithful teachers in Christianity have not likely already said.</p>
+<p>However, we are hoping to be able to say the same true things perhaps in a different way. To help the metaphorical "baby Christian" to mature just a little bit without needing to be an academic, all the while being mutually edifying to those who have been faithfully growing and studying Scripture for years. This is a difficult, if even possible, task that we view with much importance.
 
-Download this repository [here](https://github.com/iwiedenm/jekyll-theme-massively) and save it to any folder you want.
+## What else?
+We've found that while a majority of people today use Facebook regularly, the content on there is consumed in a specific way and with a specific purpose that doesn't quite match what we are hoping to build here. Unfortunately for now, we will not be producing content formally on Facebook, though this could certainly change. However, we do believe Instagram has potential to send out quick bite size quotes or scripture references in an easy to use and consume format.
 
-Open a terminal window or a command line and ```cd``` to that location.
+We are in the process of producing templates. So that we can regularly post Scripture, quotes, and excerpts of creeds and confessions to Instagram. We hope that these will be edifying to our followers.
 
-Then enter: ```bundle exec jekyll serve```. You can now access your new Jekyll site from [http://127.0.0.1:4000/](http://127.0.0.1:4000/). Have fun exploring your new site!
+In addition, this is obviously a blog, so you can certainly look forward to less bite sized posts here that are still accessible and centered on Scripture.
 
-## Features
-### Auto-Generating Sitemap
-The sitemap is auto generated! Just simply change the front matter of each site. It looks like so...
+We look forward to sharing this with you all in the weeks and months ahead!
+
 ```
 sitemap:
     priority: 0.7
-    lastmod: 2017-11-02
-    changefreq: weekly
+    lastmod: 2019-10-31
+    changefreq: never
 ```
-### Formspring integration
-The contact form below each page on the footer actually collects information! Just change your email address in the ```_config.yml``` file!
