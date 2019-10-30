@@ -18,10 +18,3 @@ We are in the process of producing templates. So that we can regularly post Scri
 In addition, this is obviously a blog, so you can certainly look forward to less bite sized posts here that are still accessible and centered on Scripture.
 
 We look forward to sharing this with you all in the weeks and months ahead!
-
-```
-sitemap:
-    priority: 0.7
-    lastmod: 2019-10-31
-    changefreq: never
-```
