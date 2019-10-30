@@ -7,7 +7,7 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://letterstothesaints.com" # the base hostname & protocol for your site
 
 # Comments
-disqus_shortname:   default
+#disqus_shortname:   default
 
 # Social
 #analytics-id:       "default"
