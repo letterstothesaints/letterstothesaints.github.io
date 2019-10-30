@@ -1,147 +1,69 @@
-@charset "utf-8";
-// Foundation by ZURB
-// foundation.zurb.com
-// Licensed under MIT Open Source
+/// Removes a specific item from a list.
+/// @author Hugo Giraudel
+/// @param {list} $list List.
+/// @param {integer} $index Index.
+/// @return {list} Updated list.
+@function remove-nth($list, $index) {
 
-// This is the default html and body font-size for the base rem value.
-$rem-base: 16px !default;
+  $result: null;
 
-// IMPORT ONCE
-// We use this to prevent styles from being loaded multiple times for compenents that rely on other components.
-$modules: () !default;
-@mixin exports($name) {
-  // Import from global scope
-  $modules: $modules !global;
-  // Check if a module is already on the list
-  $module_index: index($modules, $name);
-  @if (($module_index == null) or ($module_index == false)) {
-    $modules: append($modules, $name) !global;
-    @content;
+  @if type-of($index) != number {
+    @warn "$index: #{quote($index)} is not a number for `remove-nth`.";
   }
-}
-
-//
-// @functions
-//
-
-
-// RANGES
-// We use these functions to define ranges for various things, like media queries.
-@function lower-bound($range){
-  @if length($range) <= 0 {
-    @return 0;
+  @else if $index == 0 {
+    @warn "List index 0 must be a non-zero integer for `remove-nth`.";
   }
-  @return nth($range,1);
-}
-
-@function upper-bound($range) {
-  @if length($range) < 2 {
-    @return 999999999999;
+  @else if abs($index) > length($list) {
+    @warn "List index is #{$index} but list is only #{length($list)} item long for `remove-nth`.";
   }
-  @return nth($range, 2);
-}
+  @else {
 
-// STRIP UNIT
-// It strips the unit of measure and returns it
-@function strip-unit($num) {
-  @return $num / ($num * 0 + 1);
-}
+    $result: ();
+    $index: if($index < 0, length($list) + $index + 1, $index);
 
-// TEXT INPUT TYPES
+    @for $i from 1 through length($list) {
 
-@function text-inputs( $types: all, $selector: input ) {
+      @if $i != $index {
+        $result: append($result, nth($list, $i));
+      }
 
-    $return: ();
-
-    $all-text-input-types:
-      text
-      password
-      date
-      datetime
-      datetime-local
-      month
-      week
-      email
-      number
-      search
-      tel
-      time
-      url
-      color
-      textarea;
-
-    @if $types == all { $types: $all-text-input-types; }
-
-    @each $type in $types {
-        @if $type == textarea {
-            @if $selector == input {
-              $return: append($return, unquote('#{$type}'), comma)
-            } @else {
-              $return: append($return, unquote('#{$type}#{$selector}'), comma)
-            }
-        } @else {
-            $return: append($return, unquote('#{$selector}[type="#{$type}"]'), comma)
-        }
     }
 
-    @return $return;
-
-}
-
-// CONVERT TO REM
-@function convert-to-rem($value, $base-value: $rem-base)  {
-  $value: strip-unit($value) / strip-unit($base-value) * 1rem;
-  @if ($value == 0rem) { $value: 0; } // Turn 0rem into 0
-  @return $value;
-}
-
-@function data($attr) {
-  @if $namespace {
-    @return '[data-' + $namespace + '-' + $attr + ']';
   }
 
-  @return '[data-' + $attr + ']';
+  @return $result;
+
 }
 
-// REM CALC
+/// Gets a value from a map.
+/// @author Hugo Giraudel
+/// @param {map} $map Map.
+/// @param {string} $keys Key(s).
+/// @return {string} Value.
+@function val($map, $keys...) {
 
-// New Syntax, allows to optionally calculate on a different base value to counter compounding effect of rem's.
-// Call with 1, 2, 3 or 4 parameters, 'px' is not required but supported:
-//
-//   rem-calc(10 20 30px 40);
-//
-// Space delimited, if you want to delimit using comma's, wrap it in another pair of brackets
-//
-//   rem-calc((10, 20, 30, 40px));
-//
-// Optionally call with a different base (eg: 8px) to calculate rem.
-//
-//   rem-calc(16px 32px 48px, 8px);
-//
-// If you require to comma separate your list
-//
-//   rem-calc((16px, 32px, 48), 8px);
-
-@function rem-calc($values, $base-value: $rem-base) {
-  $max: length($values);
-
-  @if $max == 1 { @return convert-to-rem(nth($values, 1), $base-value); }
-
-  $remValues: ();
-  @for $i from 1 through $max {
-    $remValues: append($remValues, convert-to-rem(nth($values, $i), $base-value));
+  @if nth($keys, 1) == null {
+    $keys: remove-nth($keys, 1);
   }
-  @return $remValues;
+
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
+
+  @return $map;
+
 }
 
-// OLD EM CALC
-// Deprecated: We'll drop support for this in 5.1.0, use rem-calc()
-@function emCalc($values){
-  @return rem-calc($values);
+/// Gets a font value.
+/// @param {string} $keys Key(s).
+/// @return {string} Value.
+@function _font($keys...) {
+  @return val($font, $keys...);
 }
 
-// OLD EM CALC
-// Deprecated: We'll drop support for this in 5.1.0, use rem-calc()
-@function em-calc($values){
-  @return rem-calc($values);
+/// Gets a palette value.
+/// @param {string} $keys Key(s).
+/// @return {string} Value.
+@function _palette($keys...) {
+  @return val($palette, $keys...);
 }

@@ -1,71 +1,48 @@
-# This theme was cloned from the original creator below and modified for our needs. Please support their work!
+# Scriptor
 
-## You like and use this theme? Then support me. Just [paypal.me/PhlowMedia](https://www.paypal.me/PhlowMedia) :)
+Scriptor is a simple, minimal, clean & responsive Jekyll theme for writers.
 
-[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=Phlow&url=https://github.com/Phlow/feeling-responsive&title=Support%20Feeling%20Responsive%20Jekyll%20Theme&language=en_GB&tags=github,jekyll,theme,webdesign&category=software)
+[Live Demo](https://scriptor-jekyll.netlify.com/) &nbsp; | &nbsp; [Download](https://github.com/JustGoodThemes/Scriptor-Jekyll-Theme/archive/master.zip) &nbsp;
 
+![Scriptor-Jekyll-Theme](images/scriptor-jekyll.png)
 
-# Newsletter: Stay in Touch for Future Updates
+## Features
 
-If you are a webdesigner interested in Jekyll, the static website generator, this little newsletter is for you. I share tutorials, clever code snippets and information about my own Jekyll Themes called [*Feeling Responsive*][7] and [*Simplicity*][8]. Please don't expect weekly emails :)
++ Responsive design
++ Archive organized by [tags](https://scriptor-jekyll.netlify.com/tags/)
++ Disqus Comments
++ Accent color options
++ [Prism](https://prismjs.com/) syntax highlighter
++ Stackbit [Uniform support](https://docs.stackbit.com/uniform/)
 
-[![Subscribe to Jekyll Newsletter](https://phlow.github.io/static/tinyletter_subscribe_button.png)](https://tinyletter.com/feeling-responsive)
+## Deployment
 
+### Stackbit Deploy
 
-[![Start Video](https://github.com/Phlow/feeling-responsive/blob/gh-pages/images/video-feeling-responsive-1280x720.jpg)](https://www.youtube.com/embed/3b5zCFSmVvU)
+This theme contains a `stackbit.yaml` file and can be used with [Stackbit](https://www.stackbit.com/) to instantly deploy to Netlify with optional headless CMS (Contentful, DatoCMS, Forestry, NetlifyCMS, etc.). 
 
-## A Responsive Jekyll Theme: *Feeling Responsive*
+[![Create with Stackbit](https://assets.stackbit.com/badge/create-with-stackbit.svg)](https://app.stackbit.com/create?theme=https://github.com/JustGoodThemes/Scriptor-Jekyll-Theme)
 
-Do you want to get to know *Feeling Responsive*? Than check it out first and have a look on its home at  <http://phlow.github.io/feeling-responsive/>.
+### Local Instalation
 
-To get to know *Feeling Responsive* check out all the features explained in the [documentation][1].
+To set up Jekyll on local machine please follow the official documentation that can be found here -> https://jekyllrb.com/docs/.
 
-And what license is *Feeling Responsive* released under? [This one][2].
+To run the theme locally, navigate to the theme directory and run `bundle install` to install the dependencies, then run `bundle exec jekyll serve` to start the Jekyll server.
 
+### Manual Deployment
 
+Jekyll generates your static site to the **_site** directory by default. You can transfer the contents of this directory to almost any hosting provider to get your site live.
 
-## Why use this theme?
+### Netlify
 
-Feeling Responsive is heavily customizable.
+This theme is prepared to be hosted on [Netlify](https://www.netlify.com/). All you need to do is create a new private repository on GitHub or GitLab. Upload the theme to the repository and link your repo to Netlify. Please check [this link](https://www.netlify.com/blog/2015/10/28/a-step-by-step-guide-jekyll-3.0-on-netlify/#step-2-link-to-your-github) with the step by step guidelines.
 
-1. Language-Support :)
-2. Optimized for speed and it's responsive.
-3. Built on Foundation Framework.
-4. Six different Headers.
-5. Customizable navigation, footer,...
+### Amazon S3
 
-**[More ›][3]**
+If you want to host your site on Amazon S3, you can do so by using the [s3_website application](https://github.com/laurilehmijoki/s3_website). It will push your site to Amazon S3 where it can be served like any web server, dynamically scaling to almost unlimited traffic.
 
+Also, please check the [Deployment Methods](https://jekyllrb.com/docs/deployment-methods/) page on Jekyll website.
 
+## Licenses
 
-## Changelog
-
-*Feeling Responsive* is in active development. Thank you to everyone who contributed, especially [Róbert Papp][5], [Alexandra von Criegern](https://github.com/plutonik-a) and [Juan Jose Amor Iglesias](https://github.com/jjamor).
-
-**[Read Changelog ›][6]**
-
-
-
-## Video Tutorial
-
-Click the image to [watch the YouTube-Video-Tutorial][4].
-
-[![Start Video](https://github.com/Phlow/feeling-responsive/blob/gh-pages/images/video-feeling-responsive-tutorial-frontpage.jpg)](https://www.youtube.com/watch?v=rLS-BEvlEyY)
-
-
-
-
-
-
-
-
- [1]: http://phlow.github.io/feeling-responsive/documentation/
- [2]: https://github.com/Phlow/feeling-responsive/blob/gh-pages/LICENSE
- [3]: http://phlow.github.io/feeling-responsive/info/
- [4]: https://www.youtube.com/watch?v=rLS-BEvlEyY
- [5]: https://github.com/TWiStErRob
- [6]: https://phlow.github.io/feeling-responsive/changelog/
- [7]: http://phlow.github.io/feeling-responsive/
- [8]: http://phlow.github.io/simplicity/
- [9]: #
- [10]: #
+All files and directories are licensed under the [MIT](https://opensource.org/licenses/mit-license.php) unless explicitly stated.

@@ -1,13 +1,10 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-gem 'jekyll'
+# This will help ensure the proper Jekyll version is running.
+gem "jekyll", "~> 3.8.5"
 
 group :jekyll_plugins do
-  gem 'jekyll-gist'
   gem 'jekyll-paginate'
-  gem "jekyll-asciidoc"
+  gem 'jekyll-sitemap'
 end
-
-gem 'asciidoctor', '~> 1.5.4'
-gem 'coderay', '1.1.1'
 
