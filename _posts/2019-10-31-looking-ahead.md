@@ -11,7 +11,7 @@ image: "/images/pic02.jpeg"
 <p>However, we are hoping to be able to say the same true things perhaps in a different way. To help the metaphorical "baby Christian" to mature just a little bit without needing to be an academic, all the while being mutually edifying to those who have been faithfully growing and studying Scripture for years. This is a difficult, if even possible, task that we view with much importance.</p>
 
 ## What else?
-We've found that while a majority of people today use Facebook regularly, the content on there is consumed in a specific way and with a specific purpose that doesn't quite match what we are hoping to build here. Unfortunately for now, we will not be producing content formally on Facebook, though this could certainly change. However, we do believe Instagram has potential to send out quick bite size quotes or scripture references in an easy to use and consume format.
+First, you're of course welcome to share our content anywhere! We've found that while a majority of people today use Facebook regularly, the content on there is consumed in a specific way and with a specific purpose that doesn't quite match what we are hoping to build here. Unfortunately for now, we will not be formally producing content on Facebook, though this could certainly change. However, we do believe Instagram has potential to send out quick bite size quotes or scripture references in an easy to use and consume format. You're of course welcome to share our content anywhere!
 
 We are in the process of producing templates. So that we can regularly post Scripture, quotes, and excerpts of creeds and confessions to Instagram. We hope that these will be edifying to our followers.
 
