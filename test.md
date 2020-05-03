@@ -11,6 +11,6 @@ sitemap:
 
 <center>
     <video>
-    <source src="https://drive.google.com/uc?export=download&id=1SKKahKkvKyTzy3pVWiPg64HL7JYTJxKy" type='video/mp4'>
+    <source src="https://drive.google.com/file/d/1SKKahKkvKyTzy3pVWiPg64HL7JYTJxKy/view?usp=sharing" type='video/mp4'>
 </video>
 </center>
