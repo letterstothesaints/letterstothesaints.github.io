@@ -10,7 +10,5 @@ sitemap:
 ## Test Video Host From Google Drive
 
 <center>
-    <video>
-    <source src="https://drive.google.com/file/d/1SKKahKkvKyTzy3pVWiPg64HL7JYTJxKy/view?usp=sharing" type='video/mp4'>
-</video>
+    <iframe src="https://drive.google.com/file/d/1SKKahKkvKyTzy3pVWiPg64HL7JYTJxKy/preview" width="640" height="480"></iframe>
 </center>
