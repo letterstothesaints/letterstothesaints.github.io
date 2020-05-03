@@ -9,6 +9,6 @@ sitemap:
 ---
 ## Test Video Host From Google Drive
 
-<iframe width="766" height="431" src="https://drive.google.com/file/d/1SKKahKkvKyTzy3pVWiPg64HL7JYTJxKy/view"
+<iframe is="x-frame-bypass" width="766" height="431" src="https://drive.google.com/file/d/1SKKahKkvKyTzy3pVWiPg64HL7JYTJxKy/view"
 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
 picture-in-picture" allowfullscreen></iframe>
