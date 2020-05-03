@@ -10,5 +10,5 @@ sitemap:
 ## Test Video Host From Google Drive
 
 <center>
-    <iframe src="https://drive.google.com/file/d/1SKKahKkvKyTzy3pVWiPg64HL7JYTJxKy/preview" width="640" height="480"></iframe>
+    <iframe src="https://drive.google.com/file/d/1SKKahKkvKyTzy3pVWiPg64HL7JYTJxKy/view" width="640" height="480"></iframe>
 </center>
