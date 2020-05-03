@@ -9,4 +9,8 @@ sitemap:
 ---
 ## Test Video Host From Google Drive
 
-<center><iframe src="https://drive.google.com/file/d/19pFFQwZcwNQNubE8WHXbE8VfGRJs8k09/view"></iframe></center>
+<center>
+    <video>
+    <source src="https://drive.google.com/uc?export=download&id=1SKKahKkvKyTzy3pVWiPg64HL7JYTJxKy" type='video/mp4'>
+</video>
+</center>
