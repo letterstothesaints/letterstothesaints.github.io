@@ -2,7 +2,7 @@
 layout: post
 title:  "Prayer & Satisfaction"
 date:   2020-07-11
-hidden: true
+hidden: false
 excerpt: "We spend so much time in prayer asking God for things that will not ultimately satisfy us."
 image: "/images/prayer1.jpeg"
 ---
